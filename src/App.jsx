@@ -17,7 +17,7 @@ function App() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ email, message, name, phone }),
-    })
+    }).then(r => r.json()).then(console.log)
   }
 
   return (
