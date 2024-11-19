@@ -16,7 +16,7 @@ function App() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, message, name, phone }),
+      body: JSON.stringify({ email, message, name, phone, channel: "@chatdeni2" }),
     }).then(r => r.json()).then(console.log)
   }
 
